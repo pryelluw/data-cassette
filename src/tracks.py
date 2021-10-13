@@ -3,7 +3,7 @@ from dataclasses import dataclass
 
 
 @dataclass
-class BaseTape:
+class BaseTrack:
     value: Any
     label: str
 
@@ -17,25 +17,25 @@ class BaseTape:
         raise NotImplementedError
 
 
-class StringTape(BaseTape):
+class StringTrack(BaseTrack):
     value: str
 
 
-class IntegerTape(BaseTape):
+class IntegerTrack(BaseTrack):
     value: int
 
 
-class BooleanTape(BaseTape):
+class BooleanTrack(BaseTrack):
     value: bool
 
 
-class FloatTape(BaseTape):
+class FloatTrack(BaseTrack):
     value: float
 
 
-class ListTape(BaseTape):
+class ListTrack(BaseTrack):
     value: list[Any]
 
 
-class DictTape(Basetape):
+class DictTrack(BaseTrack):
     value = Dict[Any, Any]

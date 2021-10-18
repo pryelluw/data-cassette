@@ -1,0 +1,19 @@
+# Example of a Data Cassette
+
+cassete:
+  title: Sample title
+  description: Sample description
+  tape:
+    tracks:
+
+      - BaseTrack:
+        label: Sample label
+        value: Sample value
+        value_type: Sample value type
+        validate: Sample validate
+      - AnotherTrack:
+      
+        label: Sample label 2
+        value: Sample value 2
+        value_type: Sample value type
+        validate: Sample validate 2
